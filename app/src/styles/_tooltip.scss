@@ -1,3 +1,8 @@
+// The global tooltip is force-mounted, so its popper wrapper stays in place (at its last position) while closed
+[data-reka-popper-content-wrapper] {
+	pointer-events: none;
+}
+
 .tooltip {
 	--tooltip-foreground-color: var(--foreground-inverted);
 	--tooltip-background-color: var(--background-inverted);
